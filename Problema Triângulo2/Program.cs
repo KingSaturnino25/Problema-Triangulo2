@@ -6,18 +6,21 @@ namespace Problema_Triângulo2
     {
         static void Main(string[] args)
         {
-            double xA, xB, xC, yA, yB, yC;
-            xA = 3.00;
-            xB = 4.00;
-            xC = 5.00;
-            yA = 7.50;
-            yB = 4.50;
-            yC = 4.02;
+            Triangulo x, y;
+            x = new Triangulo();
+            y = new Triangulo();
 
-            double p = (xA + xB + xC) / 2;
-            double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
-            p = (yA + yB + yC) / 2;
-            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+            x.A = 3.00;
+            x.B = 4.00;
+            x.C = 5.00;
+            y.A = 7.50;
+            y.B = 4.50;
+            y.C = 4.02;
+
+            double p = (x.A + x.B + x.C) / 2;
+            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+            p = (y.A + y.B + y.C) / 2;
+            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
 
             Console.WriteLine("Area de X :" + areaX);
             Console.WriteLine("Area de Y :" + areaY);
