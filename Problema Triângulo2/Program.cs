@@ -16,6 +16,20 @@ namespace Problema_Triângulo2
 
             double p = (xA + xB + xC) / 2;
             double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+            p = (yA + yB + yC) / 2;
+            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+
+            Console.WriteLine("Area de X :" + areaX);
+            Console.WriteLine("Area de Y :" + areaY);
+
+            if (areaX == areaY)
+                Console.WriteLine("Areas são iguais");
+            else if (areaX > areaY)
+                Console.WriteLine("Area X é maior");
+                    else
+                Console.WriteLine("Area Y é maior");
+
+
         }
     }
 }
